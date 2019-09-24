@@ -97,6 +97,13 @@ func TestPerfectGame(t *testing.T) {
 	}
 }
 
+func TestNegativePins(t *testing.T) {
+	g := bowling.StartGame()
+	if err := g.Roll(-1); err == nil {
+		t.Error("Expected error, but got none")
+	}
+}
+
 func TestImperfectGame(t *testing.T) {
 	g := bowling.StartGame()
 	for i := 0; i < 10; i++ {

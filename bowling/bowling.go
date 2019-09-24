@@ -21,6 +21,10 @@ func StartGame() *Game {
 // Roll represents an individual roll
 func (g *Game) Roll(pins int) error {
 
+	if pins < 0 {
+		return errors.New("Negative pins")
+	}
+
 	// If we've had all our rolls, disregard this one
 	// In Go we'd normally return an error but the Kata didn't
 	// specify one on it's
