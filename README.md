@@ -1,12 +1,6 @@
 # TDD Demo - Bowling Game Kata
 
 This is a simple Go implementation of a solution to the TDD bowling kata
-
-## Branches
-
-- `master` an empty project which can be used to practice/demonstrate the kata
-- `completed` a branch with the completed code and a commit history detailing
-  each step.
   
 ## Bowling Game Kata
 
